@@ -30,14 +30,6 @@ class Plugin extends PluginBase
     /**
      * {@inheritdoc}
      */
-    public function register()
-    {
-
-    }
-
-    /**
-     * {@inheritdoc}
-     */
     public function boot()
     {
         App::register(HtmlPurifierServiceProvider::class);
