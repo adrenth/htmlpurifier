@@ -2,7 +2,6 @@
 
 namespace Adrenth\HtmlPurifier;
 
-use Adrenth\HtmlPurifier\ServiceProviders\HtmlPurifierServiceProvider;
 use App;
 use HTMLPurifier;
 use System\Classes\PluginBase;
