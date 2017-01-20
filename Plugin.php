@@ -2,7 +2,6 @@
 
 namespace Adrenth\HtmlPurifier;
 
-use Adrenth\HtmlPurifier\ServiceProviders\HtmlPurifierServiceProvider;
 use App;
 use HTMLPurifier;
 use System\Classes\PluginBase;
@@ -26,14 +25,6 @@ class Plugin extends PluginBase
             'icon' => 'icon-leaf',
             'homepage' => 'https://github.com/adrenth/redirect',
         ];
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function register()
-    {
-
     }
 
     /**

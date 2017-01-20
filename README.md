@@ -14,3 +14,12 @@ HTML Purifier is an HTML filtering solution that uses a unique combination of ro
 
 Go to Settings > Updates & Plugins > Install plugins and search for 'HtmlPurifier'. 
 
+## Configuration
+
+To configure the filter execute this command:
+
+`php artisan vendor:publish --provider="Adrenth\HtmlPurifier\HtmlPurifierServiceProvider" --tag="config"`
+
+A configuration file named `config/htmlpurifier.php` is now created.
+
+In depth information about configuration parameters can be found here: [http://htmlpurifier.org/live/configdoc/plain.html]().
