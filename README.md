@@ -18,8 +18,28 @@ Go to Settings > Updates & Plugins > Install plugins and search for 'HtmlPurifie
 
 To configure the filter execute this command:
 
-`php artisan vendor:publish --provider="Adrenth\HtmlPurifier\HtmlPurifierServiceProvider" --tag="config"`
+````
+php artisan vendor:publish --provider="Adrenth\HtmlPurifier\HtmlPurifierServiceProvider" --tag="config"
+````
 
 A configuration file named `config/htmlpurifier.php` is now created.
 
-In depth information about configuration parameters can be found here: [http://htmlpurifier.org/live/configdoc/plain.html]().
+In depth information about configuration parameters can be found here: http://htmlpurifier.org/live/configdoc/plain.html
+
+## Usage
+
+Use the `|purify' in your Twig templates to apply the HTML Purifier filter.
+
+````
+{{ contentFromCms|purify }}
+
+{{ contentFromExternalSource|purify }}
+````
+
+or
+
+````
+{{ '<a href="" target="_blank">Some random HTML string</a>'|purify }}
+````
+
+For more information about templating in October CMS: http://octobercms.com/docs/markup/templating
