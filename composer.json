@@ -1,0 +1,20 @@
+{
+    "name": "adrenth/htmlpurifier",
+    "description": "Adds a standards compliant HTML filter to October CMS",
+    "type": "october-plugin",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Alwin Drenth",
+            "email": "adrenth@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "HTMLPurifier": "library/"
+        },
+        "files": [
+            "library/HTMLPurifier.composer.php"
+        ]
+    }
+}
