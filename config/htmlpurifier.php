@@ -63,6 +63,7 @@ return [
     'Cache.SerializerPath' => temp_path(),
     'Cache.SerializerPermissions' => 493,
     'Core.AggressivelyFixLt' => true,
+    'Core.AggressivelyRemoveScript' => true,
     'Core.AllowHostnameUnderscore' => false,
     'Core.CollectErrors' => false,
     'Core.ColorKeywords' => [
@@ -97,6 +98,7 @@ return [
         'style' => true,
     ],
     'Core.Language' => 'en',
+    'Core.LegacyEntityDecoder' => false,
     'Core.LexerImpl' => null,
     'Core.MaintainLineNumbers' => null,
     'Core.NormalizeNewlines' => true,
@@ -143,6 +145,7 @@ return [
     'HTML.SafeScripting' => [],
     'HTML.Strict' => false,
     'HTML.TargetBlank' => false,
+    'HTML.TargetNoopener' => true,
     'HTML.TargetNoreferrer' => true,
     'HTML.TidyAdd' => [],
     'HTML.TidyLevel' => 'medium',
